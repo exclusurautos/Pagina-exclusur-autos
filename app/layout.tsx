@@ -62,6 +62,13 @@ export const metadata: Metadata = {
     description: "Vehículos de lujo y alta gama en Colombia con garantía y respaldo profesional.",
     images: ["/og-image.jpg"],
   },
+  icons: {
+  icon: [
+    { url: "/favicon.svg", type: "image/svg+xml" },
+    { url: "/favicon.ico" }, // fallback opcional
+  ],
+  apple: "/apple-touch-icon.png",
+},
   robots: {
     index: true,
     follow: true,
