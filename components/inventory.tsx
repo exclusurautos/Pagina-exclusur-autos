@@ -159,7 +159,7 @@ export function Inventory() {
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="all">Todas las marcas</SelectItem>
-              <SelectItem value="Mercedes-Benz">Mercedes-Benz</SelectItem>
+              <SelectItem value="Renault-Logan">Renault Logan</SelectItem>
               <SelectItem value="BMW">BMW</SelectItem>
               <SelectItem value="Porsche">Porsche</SelectItem>
               <SelectItem value="Audi">Audi</SelectItem>
