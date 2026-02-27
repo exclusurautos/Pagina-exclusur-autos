@@ -46,7 +46,7 @@ export function Contact() {
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
                   <a
-                    href="mailto:info@exclusurautos.com"
+                    href="mailto:exclusurautos@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     exclusurautos@gmail.com
@@ -59,7 +59,7 @@ export function Contact() {
                 <div className="flex gap-4">
                   <Button size="icon" variant="outline" asChild>
                     <a
-                      href="https://instagram.com/exclusurautos"
+                      href="https://www.instagram.com/exclusur_autos/"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Síguenos en Instagram"
@@ -69,7 +69,7 @@ export function Contact() {
                   </Button>
                   <Button size="icon" variant="outline" asChild>
                     <a
-                      href="https://facebook.com/exclusurautos"
+                      href="https://www.facebook.com/share/177gGyy9vx/?mibextid=wwXIfr"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Síguenos en Facebook"
@@ -79,7 +79,7 @@ export function Contact() {
                   </Button>
                   <Button size="icon" variant="outline" asChild>
                     <a
-                      href="https://tiktok.com/@exclusurautos"
+                      href="https://www.tiktok.com/@exclusur.autos?_r=1&_t=ZS-94HAvxkvFWJ"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Síguenos en TikTok"

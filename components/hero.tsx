@@ -20,7 +20,7 @@ export function Hero() {
           Confianza, elegancia y respaldo en cada vehículo
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty">
-          Descubre la excelencia en compraventa de vehículos de lujo en Colombia
+          Descubre la excelencia en compraventa de vehículos de en Colombia
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90">

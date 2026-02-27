@@ -64,9 +64,9 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contacto</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>+57 300 123 4567</li>
-              <li>info@exclusurautos.com</li>
-              <li>Bogotá, Colombia</li>
+              <li>+57 310 505 9178</li>
+              <li>exclusurautos@gmail.com</li>
+              <li>Envigado, Colombia</li>
             </ul>
           </div>
         </div>
