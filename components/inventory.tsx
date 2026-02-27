@@ -46,7 +46,7 @@ const vehicles = [
     model: "Mazda 2 Grad Touring LX",
     year: 2023,
     price: 80900000,
-    image: "/mazda2.jpeg",
+    image: "/mazda2-p.jpg",
     mileage: "36,000 km",
     color: "Cuarzo platino",
     transmission: "Automática",
@@ -54,7 +54,7 @@ const vehicles = [
     fuelType: "Gasolina",
     description:
       "El Mazda 2 Grand Touring LX integra conectividad, seguridad y acabados de alta calidad en un formato compacto. Equilibrio perfecto entre rendimiento, eficiencia y experiencia de manejo..",
-    images: ["/mazda2.jpeg", "/m2-1.jpg", "/m2-2.jpg", "/m2-3.jpg", "/m2-4.jpg", "/m2-5.jpg", "/m2-06.jpg", "/m2-6.jpg", "/M2-7.jpg"],
+    images: ["/mazda2-p.jpg", "/m2-1.jpg", "/m2-2.jpg", "/m2-3.jpg", "/m2-4.jpg", "/m2-5.jpg", "/m2-06.jpg", "/m2-6.jpg", "/M2-7.jpg"],
   },
   {
     id: 4,
