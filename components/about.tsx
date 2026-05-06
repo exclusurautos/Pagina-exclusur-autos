@@ -30,14 +30,14 @@ export function About() {
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">Sobre Exclusur Autos</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Somos una empresa colombiana especializada en la compraventa de vehículos de lujo y alta gama. Con años de
-            experiencia en el mercado automotriz, nos hemos consolidado como referentes en exclusividad, confianza y
-            profesionalismo.
+            Somos una empresa colombiana dedicada a la compraventa de vehículos usados y seminuevos. Con experiencia en
+            el mercado automotriz, nos hemos consolidado como una opción confiable y transparente para quienes buscan
+            un vehículo de calidad a buen precio.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Nuestra misión es conectar a nuestros clientes con los vehículos de sus sueños, garantizando transparencia,
-            respaldo legal y la mejor experiencia de compra. Cada vehículo en nuestro inventario pasa por rigurosos
-            controles de calidad para asegurar tu satisfacción.
+            Nuestra misión es facilitar la compra y venta de vehículos de forma segura y sencilla, brindando respaldo
+            legal y atención personalizada en cada negociación. Trabajamos para que encuentres el carro que necesitas
+            con total tranquilidad y confianza.
           </p>
         </div>
 
