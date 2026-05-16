@@ -23,17 +23,17 @@ export const metadata: Metadata = {
   keywords: [
     "compra venta carros usados Colombia",
     "vehículos de lujo Colombia",
-    "autos usados Bogotá",
+    "autos usados Medellin",
     "carros de alta gama",
     "Mercedes-Benz usados",
     "BMW usados Colombia",
-    "Porsche usados",
-    "Ferrari Colombia",
-    "Lamborghini usados",
+    "Renault usados",
+    "Mazda Colombia",
+    "Nissan usados",
     "compraventa autos",
     "carros seminuevos",
     "vehículos exclusivos Colombia",
-    "concesionario carros lujo",
+    "concesionario carros",
   ].join(", "),
   authors: [{ name: "Exclusur Autos" }],
   creator: "Exclusur Autos",
@@ -100,7 +100,32 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${playfair.variable} ${inter.variable}`}>
       <head>
+        <meta name="facebook-domain-verification" content="qurgish02jhi29gseiemg4j4jprax3" />
         <link rel="canonical" href="https://exclusurautos.com" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '2067378580542089');
+              fbq('track', 'PageView');
+            `,
+          }}
+        />
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=2067378580542089&ev=PageView&noscript=1"
+          />
+        </noscript>
       </head>
       <body className={`font-sans antialiased`}>
         {children}
