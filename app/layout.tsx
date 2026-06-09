@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { Playfair_Display, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 import "./globals.css"
 
 const playfair = Playfair_Display({
@@ -17,58 +18,61 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Exclusur Autos - Compra y Venta de Vehículos de Lujo en Colombia",
+  title: {
+    default: "Exclusur Autos | Carros Usados en Medellín y Envigado",
+    template: "%s | Exclusur Autos",
+  },
   description:
-    "Compra y venta de vehículos de lujo y alta gama en Colombia. Mercedes-Benz, BMW, Porsche, Ferrari, Lamborghini y más. Vehículos usados certificados con garantía y respaldo profesional.",
+    "Compra y vende carros usados en Medellín y Envigado con total respaldo. Todos nuestros vehículos pasan peritaje. Atención personalizada, financiación y permutas. Visítanos en Envigado.",
   keywords: [
+    "carros usados Medellín",
+    "carros usados Envigado",
     "compra venta carros usados Colombia",
-    "vehículos de lujo Colombia",
-    "autos usados Medellin",
-    "carros de alta gama",
-    "Mercedes-Benz usados",
-    "BMW usados Colombia",
-    "Renault usados",
-    "Mazda Colombia",
-    "Nissan usados",
-    "compraventa autos",
-    "carros seminuevos",
-    "vehículos exclusivos Colombia",
-    "concesionario carros",
+    "vehículos usados Medellín",
+    "autos usados Envigado",
+    "carros seminuevos Colombia",
+    "peritaje vehículos",
+    "permuta carros Colombia",
+    "financiación carros usados",
+    "Renault usados Medellín",
+    "Mazda usados Colombia",
+    "compraventa autos Antioquia",
   ].join(", "),
   authors: [{ name: "Exclusur Autos" }],
   creator: "Exclusur Autos",
   publisher: "Exclusur Autos",
-  metadataBase: new URL("https://exclusurautos.com"),
+  metadataBase: new URL("https://www.exclusurautos.com"),
   openGraph: {
     type: "website",
     locale: "es_CO",
-    url: "https://exclusurautos.com",
-    title: "Exclusur Autos - Compra y Venta de Vehículos de Lujo en Colombia",
+    url: "https://www.exclusurautos.com",
+    title: "Exclusur Autos | Carros Usados en Medellín y Envigado",
     description:
-      "Compra y venta de vehículos de lujo y alta gama en Colombia. Vehículos usados certificados con garantía y respaldo profesional.",
+      "Compra y vende carros usados en Medellín y Envigado con total respaldo. Todos nuestros vehículos pasan peritaje. Atención personalizada, financiación y permutas.",
     siteName: "Exclusur Autos",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Exclusur Autos - Vehículos de Lujo",
+        alt: "Exclusur Autos - Carros Usados en Medellín y Envigado",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Exclusur Autos - Compra y Venta de Vehículos de Lujo",
-    description: "Vehículos de lujo y alta gama en Colombia con garantía y respaldo profesional.",
+    title: "Exclusur Autos | Carros Usados en Medellín y Envigado",
+    description:
+      "Compra y vende carros usados en Medellín y Envigado con total respaldo. Todos nuestros vehículos pasan peritaje.",
     images: ["/og-image.jpg"],
   },
   icons: {
-  icon: [
-    { url: "/favicon.svg", type: "image/svg+xml" },
-    { url: "/favicon.ico" }, // fallback opcional
-  ],
-  apple: "/apple-touch-icon.png",
-},
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   robots: {
     index: true,
     follow: true,
@@ -81,15 +85,52 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://exclusurautos.com",
+    canonical: "https://www.exclusurautos.com",
   },
-    generator: 'v0.app'
+  generator: "Next.js",
 }
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: "#1a1a1a",
+}
+
+const autoDealerSchema = {
+  "@context": "https://schema.org",
+  "@type": "AutoDealer",
+  name: "Exclusur Autos",
+  description:
+    "Compraventa de carros usados y seminuevos en Envigado y Medellín. Todos los vehículos pasan peritaje.",
+  url: "https://www.exclusurautos.com",
+  telephone: "+573105059178",
+  email: "exclusurautos@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Calle 39 Sur #25B-130",
+    addressLocality: "Envigado",
+    addressRegion: "Antioquia",
+    addressCountry: "CO",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "19:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Saturday",
+      opens: "10:00",
+      closes: "18:00",
+    },
+  ],
+  sameAs: [
+    "https://www.instagram.com/exclusur_autos/",
+    "https://www.facebook.com/share/177gGyy9vx/",
+    "https://www.tiktok.com/@exclusur.autos",
+  ],
 }
 
 export default function RootLayout({
@@ -101,7 +142,10 @@ export default function RootLayout({
     <html lang="es" className={`${playfair.variable} ${inter.variable}`}>
       <head>
         <meta name="facebook-domain-verification" content="qurgish02jhi29gseiemg4j4jprax3" />
-        <link rel="canonical" href="https://exclusurautos.com" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(autoDealerSchema) }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -122,12 +166,14 @@ export default function RootLayout({
           <img
             height="1"
             width="1"
+            alt=""
             style={{ display: "none" }}
             src="https://www.facebook.com/tr?id=2067378580542089&ev=PageView&noscript=1"
           />
         </noscript>
       </head>
       <body className={`font-sans antialiased`}>
+        <BreadcrumbSchema />
         {children}
         <Analytics />
       </body>

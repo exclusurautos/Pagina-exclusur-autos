@@ -33,7 +33,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Teléfono</h3>
-                  <a href="tel:+573001234567" className="text-muted-foreground hover:text-primary transition-colors">
+                  <a href="tel:+573105059178" className="text-muted-foreground hover:text-primary transition-colors">
                     +57 310 505 9178
                   </a>
                 </div>
@@ -111,7 +111,7 @@ export function Contact() {
               </div>
               <div className="mt-8">
                 <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                  <a href="https://wa.me/573001234567" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/573105059178" target="_blank" rel="noopener noreferrer">
                     Contactar por WhatsApp
                   </a>
                 </Button>

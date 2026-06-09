@@ -50,12 +50,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary transition-colors">
+                <Link href="mailto:exclusurautos@gmail.com" className="hover:text-primary transition-colors">
                   Términos y Condiciones
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary transition-colors">
+                <Link href="mailto:exclusurautos@gmail.com" className="hover:text-primary transition-colors">
                   Política de Privacidad
                 </Link>
               </li>

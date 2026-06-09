@@ -9,9 +9,12 @@ import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Exclusur Autos - Inicio | Vehículos de Lujo en Colombia",
+  title: "Exclusur Autos | Carros Usados en Medellín y Envigado — Compra y Venta con Peritaje",
   description:
-    "Descubre nuestra exclusiva colección de vehículos de lujo en Colombia. Mercedes-Benz, BMW, Porsche, Ferrari y más. Compra y venta con garantía y respaldo profesional.",
+    "Compra y vende carros usados en Medellín y Envigado con total respaldo. Todos nuestros vehículos pasan peritaje. Atención personalizada, financiación y permutas. Visítanos en Envigado.",
+  alternates: {
+    canonical: "https://www.exclusurautos.com",
+  },
 }
 
 export default function Home() {

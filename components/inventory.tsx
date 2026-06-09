@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -192,10 +193,12 @@ export function Inventory() {
             <Card key={vehicle.id} className="overflow-hidden group hover:border-primary transition-colors">
               <Link href={`/vehiculo/${vehicle.id}`}>
                 <div className="relative h-64 overflow-hidden cursor-pointer">
-                  <img
+                  <Image
                     src={vehicle.image || "/placeholder.svg"}
-                    alt={`${vehicle.brand} ${vehicle.model} ${vehicle.year} - ${vehicle.color} - ${vehicle.mileage} - Vehículo de lujo usado en venta`}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    alt={`${vehicle.brand} ${vehicle.model} ${vehicle.year} - ${vehicle.color} - ${vehicle.mileage} - Carro usado en venta en Medellín`}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
               </Link>
@@ -219,7 +222,7 @@ export function Inventory() {
               <CardFooter className="p-6 pt-0">
                 <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                   <a
-                    href={`https://wa.me/573001234567?text=Hola, estoy interesado en el ${vehicle.brand} ${vehicle.model} ${vehicle.year}`}
+                    href={`https://wa.me/573105059178?text=Hola, estoy interesado en el ${vehicle.brand} ${vehicle.model} ${vehicle.year}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

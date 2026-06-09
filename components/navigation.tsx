@@ -51,7 +51,7 @@ export function Navigation() {
               </Link>
             ))}
             <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-              <a href="https://wa.me/573001234567" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/573105059178" target="_blank" rel="noopener noreferrer">
                 WhatsApp
               </a>
             </Button>
@@ -82,7 +82,7 @@ export function Navigation() {
                 </Link>
               ))}
               <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 w-full">
-                <a href="https://wa.me/573001234567" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/573105059178" target="_blank" rel="noopener noreferrer">
                   WhatsApp
                 </a>
               </Button>

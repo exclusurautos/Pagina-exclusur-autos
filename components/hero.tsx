@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ChevronDown } from "lucide-react"
 
@@ -6,10 +7,12 @@ export function Hero() {
     <section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/luxury-sports-car-in-dark-showroom.jpg"
           alt="Vehículo deportivo de lujo en showroom exclusivo - Exclusur Autos Colombia"
-          className="w-full h-full object-cover opacity-40"
+          fill
+          className="object-cover opacity-40"
+          priority
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/70 to-background" />
       </div>
@@ -20,7 +23,7 @@ export function Hero() {
           Confianza, elegancia y respaldo en cada vehículo
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty">
-          Descubre la excelencia en compraventa de vehículos de en Colombia
+          Descubre la excelencia en compraventa de vehículos usados en Medellín y Envigado
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
