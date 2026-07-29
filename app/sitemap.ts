@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next"
-import { vehicles } from "@/components/inventory"
+import { vehicles } from "@/lib/vehicles"
 
 const BASE_URL = "https://www.exclusurautos.com"
 

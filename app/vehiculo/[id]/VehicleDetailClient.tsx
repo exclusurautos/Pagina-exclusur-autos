@@ -7,7 +7,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowLeft, Phone, MessageCircle, ChevronLeft, ChevronRight } from "lucide-react"
-import { vehicles } from "@/components/inventory"
+import { vehicles } from "@/lib/vehicles"
 
 export function VehicleDetailClient() {
   const params = useParams()

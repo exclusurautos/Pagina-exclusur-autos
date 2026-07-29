@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { vehicles } from "@/components/inventory"
+import { vehicles } from "@/lib/vehicles"
 import { VehicleDetailClient } from "./VehicleDetailClient"
 
 type Props = { params: Promise<{ id: string }> }
