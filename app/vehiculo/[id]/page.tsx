@@ -28,8 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `https://www.exclusurautos.com/vehiculo/${vehicle.id}`,
     },
     openGraph: {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      type: "product" as any,
+      type: "website",
       title,
       description,
       url: `https://www.exclusurautos.com/vehiculo/${vehicle.id}`,
