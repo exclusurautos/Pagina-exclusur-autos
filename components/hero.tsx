@@ -8,8 +8,8 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/luxury-sports-car-in-dark-showroom.jpg"
-          alt="Vehículo deportivo de lujo en showroom exclusivo - Exclusur Autos Colombia"
+          src="/imagen-portada-hero.jpg"
+          alt="Mazda CX-30 Touring - Vehículos usados de calidad en Envigado y Medellín - Exclusur Autos"
           fill
           className="object-cover opacity-40"
           priority
