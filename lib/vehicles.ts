@@ -117,7 +117,7 @@ export const vehicles = [
     model: "Duster Iconic",
     year: 2023,
     price: 79900000,
-    image: "/Vendidos/Duster 2023/bduster-portada.jpg",
+    image: "/Vendidos/Duster 2023/bduster-1.jpg",
     mileage: "50,000 km",
     color: "Blanco",
     transmission: "Mecánica",
@@ -127,7 +127,6 @@ export const vehicles = [
     description:
       "La Renault Duster Iconic es una SUV robusta que combina diseño moderno con gran capacidad y rendimiento. Espacio, altura y potencia se unen para ofrecer seguridad y versatilidad en cualquier terreno.",
     images: [
-      "/Vendidos/Duster 2023/bduster-portada.jpg",
       "/Vendidos/Duster 2023/bduster-1.jpg",
       "/Vendidos/Duster 2023/bduster-2.jpg",
       "/Vendidos/Duster 2023/bduster-3.jpg",
@@ -144,7 +143,7 @@ export const vehicles = [
     model: "NHR",
     year: 2023,
     price: 120900000,
-    image: "/Vendidos/Nhr 2023/nhr-portada.jpg",
+    image: "/Vendidos/Nhr 2023/nhr-2.jpg",
     mileage: "38,000 km",
     color: "Blanco",
     transmission: "Mecánica",
@@ -154,7 +153,6 @@ export const vehicles = [
     description:
       "El Chevrolet NHR es una camioneta de carga liviana robusta y confiable, ideal para trabajo y transporte. Motor diésel eficiente con excelente capacidad de carga.",
     images: [
-      "/Vendidos/Nhr 2023/nhr-portada.jpg",
       "/Vendidos/Nhr 2023/nhr-2.jpg",
       "/Vendidos/Nhr 2023/nhr-3.jpg",
       "/Vendidos/Nhr 2023/nhr-4.jpg",
