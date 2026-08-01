@@ -89,18 +89,19 @@ export function Contact() {
                       </svg>
                     </a>
                   </Button>
-                  <Button size="icon" variant="outline" asChild>
-                    <a
-                      href="https://vehiculos.mercadolibre.com.co/_CustId_1949037151"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Véanos en MercadoLibre"
-                    >
-                      <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 4.5c2.025 0 3.888.67 5.385 1.785L5.285 17.385A7.483 7.483 0 0 1 4.5 12c0-4.136 3.364-7.5 7.5-7.5zm0 15c-2.025 0-3.888-.67-5.385-1.785L18.715 6.615A7.483 7.483 0 0 1 19.5 12c0 4.136-3.364 7.5-7.5 7.5z"/>
-                      </svg>
-                    </a>
-                  </Button>
+                  <a
+                    href="https://vehiculos.mercadolibre.com.co/_CustId_1949037151"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Véanos en MercadoLibre"
+                    className="w-10 h-10 rounded-md border border-border flex items-center justify-center hover:border-yellow-400 transition-colors overflow-hidden"
+                  >
+                    <svg viewBox="0 0 64 64" className="w-8 h-8">
+                      <rect width="64" height="64" rx="8" fill="#FFE600"/>
+                      <path d="M32 10c-5.6 0-10.4 3.2-12.8 7.8C17 19.4 16 21.6 16 24c0 2 .6 3.8 1.6 5.4L32 54l14.4-24.6C47.4 27.8 48 26 48 24c0-2.4-1-4.6-2.2-6.2C43.4 13.2 38 10 32 10z" fill="#3483FA"/>
+                      <circle cx="32" cy="24" r="6" fill="#FFE600"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
