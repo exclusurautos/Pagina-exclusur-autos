@@ -93,9 +93,9 @@ export function Inventory() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   {vehicle.sold && (
-                    <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-                      <span className="bg-gray-800 text-gray-100 font-bold text-xl px-6 py-2 rotate-[-15deg] tracking-widest shadow-lg">
-                        VENDIDO
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                      <span className="font-serif bg-stone-200/90 text-stone-800 text-lg px-8 py-2 rotate-[-15deg] tracking-[0.3em] uppercase shadow-md border border-stone-400/50">
+                        Vendido
                       </span>
                     </div>
                   )}
