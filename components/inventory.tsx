@@ -94,7 +94,7 @@ export function Inventory() {
                   />
                   {vehicle.sold && (
                     <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-                      <span className="bg-red-600 text-white font-bold text-xl px-6 py-2 rotate-[-15deg] tracking-widest shadow-lg">
+                      <span className="bg-gray-800 text-gray-100 font-bold text-xl px-6 py-2 rotate-[-15deg] tracking-widest shadow-lg">
                         VENDIDO
                       </span>
                     </div>
